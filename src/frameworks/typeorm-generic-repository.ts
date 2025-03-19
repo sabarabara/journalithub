@@ -8,12 +8,9 @@ export class MongoGenericRepository<T> implements IGenericRepository<T> {
   }
 
   create(item: T): Promise<T> {
-    console.log(3);
     return this._repository.create(item);
   }
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-expect-error
   findAll(): Promise<T[]> {
     return this._repository.find();
   }

@@ -1,6 +1,6 @@
 import { Injectable, OnApplicationBootstrap } from '@nestjs/common';
 import { IdataServices } from '../core/abstracts/data-services.abstract';
-import { MongoGenericRepository } from './typeorm-generic-repository';
+import { MongoGenericRepository } from './mongo-generic-repository';
 import { Journal, JournalDocument } from './model/journal.entity';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
